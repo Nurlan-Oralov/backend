@@ -1,0 +1,89 @@
+.header{
+    padding: 0 10% 0 10%;
+    font-weight: 250;
+    font-size: 20px;
+}
+
+.Welcome_Page{
+    padding: 3% 10% 5% 10%;
+    font-weight: 200;
+    font-size: 42px;
+}
+
+
+.Title_WelcomePage{
+    font-weight: 250;
+    justify-content: center;
+    text-align: center;
+}
+
+.Content_WelcomePage{
+}
+
+.Authentication{
+    padding: 8% 10% 10% 10%;
+    font-weight: 200;
+    font-size: 20px;
+    display: flex;
+}
+
+
+.Title_AboutUs{
+    padding-top: 2%;
+    font-weight: 230;
+    justify-content: center;
+    text-align: center;
+}
+
+.Title_AboutUs h1{
+    font-weight: 230;
+}
+
+.Content_AboutUs{
+    padding: 5% 0 5% 0;
+    display: flex;
+}
+
+.Content_AboutUs h2{
+    font-weight: 220;
+}
+
+.Footer{
+    padding: 0% 10% 0% 10%;
+    color: #6c757d;
+}
+
+.Section{
+    padding: 0% 10% 5% 10%;
+}
+
+.Features{
+    padding: 5% 0 5% 0;
+}
+
+.myModal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.myModalContent {
+    padding: 25px;
+    background: white;
+    border-radius: 16px;
+    min-width: 250px;
+}
+#navbar {
+    z-index: 1;
+    background-color: #333; /* Black background color */
+    position: fixed; /* Make it stick/fixed */
+    top: 0; /* Stay on top */
+    width: 100%; /* Full width */
+    transition: top 0.3s; /* Transition effect when sliding down (and up) */
+}

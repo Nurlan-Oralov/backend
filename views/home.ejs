@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="index.css">
+
+    <title>Web Tech</title>
+</head>
+<body>
+</div>
+<!-- Header -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navbar">
+    <div class="container-fluid header">
+        <a class="navbar-brand" href="/">Главная</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="/home">О нас</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about">Товары</a>
+                </li>
+            </ul>
+            <a class="nav-link" href="Authentication.html" style="color: #6c757d">Войти</a>
+        </div>
+    </div>
+</nav>
+<!-- First Section -->
+<div class="Section">
+    <div class="Title_AboutUs">
+        <h1>
+            О нас
+        </h1>
+    </div>
+    <div class="Features">
+        <div class="card bg-dark text-white">
+            <img src="image/AboutUsFirst.jpeg" class="card-img" alt="...">
+            <div class="card-img-overlay" style="color: black">
+                <h5 class="card-title">Ручная работа</h5>
+                <p class="card-text">Все наши изделия изготавлюваются исключительно с помощью ручной работы и проходять тщательную проверку.</p>
+            </div>
+        </div>
+    </div>
+    <div class="Features">
+        <div class="card bg-dark text-white">
+            <img src="image/Cows.jpeg" class="card-img" alt="...">
+            <div class="card-img-overlay" style="color: black">
+                <h5 class="card-title">Местное производство</h5>
+                <p class="card-text">Все наши изделия изготовливаются из местных продуктов, включая саму кожу.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="card" style="background-color: #212529; padding: 3% 0 3% 0">
+    <div class="Footer">
+        <div class="card-body">
+            <h5 class="card-title">Done by: Nursultan Kasymkhanov</h5>
+            <p class="card-text">Гарантия работает 7 дней и только с представлением чека.</p>
+        </div>
+    </div>
+</div>
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0";
+        } else {
+            document.getElementById("navbar").style.top = "-50px";
+        }
+        prevScrollpos = currentScrollPos;
+    }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<!--
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+-->
+</body>
+</html>
