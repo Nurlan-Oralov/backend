@@ -1,21 +1,28 @@
+require('./config/db')
+
+const main = require ('./routes/routerIndex')
+const about = require ('./routes/routerAboutUs')
+const product = require ('./routes/routerProducts')
+
 const express = require("express");
 const app = express();
-const port = 3000;
-const mongoose = require('mongoose');
-const axios = require('axios')
-const {MongoClient} = require('mongodb')
-const main = require("./routes/mainPage");
-const customerController = require('./controller/controller')
-require("./db/db");
+const port = 8080;
+const mongoose = require("mongoose");
 
-app.use(express.static(
-    'public'));
+
 app.set('view engine', 'ejs');
-app.use('/', main);
-app.use(express.json);
-app.use('/customer', customerController);
 
 
-app.listen(port, () =>
-    console.log(`App listening at http://localhost:${port}`)
+app.use(express.static('public'));
+app.use(express.urlencoded({extended:true}))
+app.use(express.json());
+
+
+app.use('/', main)
+app.use('/home', about)
+app.use('/about', product)
+
+
+app.listen(3000, () =>
+    console.log(`App listening at http://localhost:3000`)
 );
