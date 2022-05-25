@@ -5,9 +5,6 @@ const path = require('path')
 
 router
     .route("/")
-    .get( (req,res) => res.render(path.resolve('view/index.ejs'), {
-        title: 'index',
-        activePage: 'index'
-    }));
+    .get( (req,res) => res.render(path.resolve('views/index.ejs')));
 
 module.exports = router

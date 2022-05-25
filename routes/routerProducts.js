@@ -4,9 +4,7 @@ const path = require('path')
 
 
 router
-    .route("/products")
-    .get((req,res) => res.render('products'));
-
-
+    .route("/")
+    .get( (req,res) => res.render(path.resolve('views/product.ejs')));
 
 module.exports = router
