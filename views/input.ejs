@@ -34,52 +34,17 @@
 </nav>
 <!-- First Section -->
 <div class="Section">
-    <div class="Title_AboutUs">
-        <h1>Наши изделия</h1>
-    </div>
-    <div class="row row-cols-1 row-cols-md-2 g-4">
-        <div class="col">
-            <div class="card">
-                <img src="image/ForProject.jpeg" class="card-img-top" alt="...">
-                <div class="card-body">
-                <h5 class="card-title"><%=data.title[0]%></h5>
-                    <p class="card-text">Мужской кошелок из коровьей кожи, идеально подойдет к повседневнему использованию.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card">
-                <img src="image/ForProject.jpeg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title"><%= data.title[1]%></h5>
-                    <p class="card-text">Мужской кошелок из коровьей кожи, идеально подойдет к повседневнему использованию.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card">
-                <img src="image/ForProject.jpeg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title"><%= data.title[0]%></h5>
-                    <p class="card-text">Мужской кошелок из коровьей кожи, идеально подойдет к повседневнему использованию.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card">
-                <img src="image/ForProject.jpeg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title"><%= data.title[1]%></h5>
-                    <p class="card-text">Мужской кошелок из коровьей кожи, идеально подойдет к повседневнему использованию.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card">
-                <%if ()%>>
-            </div>
-        </div>
-    </div>
+    <form action="/input/addProduct">
+        <h5>Add product</h5>
+        <input type="text" name="productTitle" placeholder="Title">
+        <input type="text" name="productImg" placeholder="Img">
+        <button type="submit"> Create </button>
+    </form>
+    <form action="/input/deleteFilm" method="POST">
+        <h5>Delete film</h5>
+        <input type="text" name="productDelele" placeholder="Title">
+        <button type="submit"> Delete </button>
+    </form>
 </div>
 <div class="card" style="background-color: #212529; padding: 3% 0 3% 0">
     <div class="Footer">
